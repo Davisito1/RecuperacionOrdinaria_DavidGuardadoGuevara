@@ -19,6 +19,9 @@ export default function Datos({ navigation }) {
               {item.language}
             </Text>
           </View>
+          <View style={[styles.rating, styles.badge]}>
+            <Text>{item.rating.average}</Text>
+          </View>
         </View>
         <Text style={styles.description} numberOfLines={4}>{item.url}</Text>
         <Text>{item.premiered}</Text>
@@ -67,6 +70,7 @@ const styles = StyleSheet.create({
   badgeAlive: { backgroundColor: "#DCFCE7" },
   badgeText: { fontSize: 12, fontWeight: "700" },
   badgeTextDestroyed: { color: "#B91C1C" },
+  rating: {backgroundColor: "#ffee00"},
   badgeTextAlive: { color: "#15803D" },
   description: { fontSize: 13, color: "#4B5563", lineHeight: 19 },
   center: { alignItems: "center", marginTop: 30 },
