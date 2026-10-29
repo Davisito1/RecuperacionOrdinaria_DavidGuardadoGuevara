@@ -49,7 +49,7 @@ export default function Datos({ navigation }) {
         />
       )}
 
-      <Button title="← Volver al formulario" variant="secondary" onPress={() => navigation.navigate("Screen1")} />
+      <Button title="← Volver al formulario" variant="secondary" onPress={() => navigation.navigate("Home")} />
     </View>
   );
 }
